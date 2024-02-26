@@ -1,0 +1,52 @@
+#h2_cont, .text_block {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+#h2_cont.animated, .text_block.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.recipe_flex img {
+  
+  transition: transform 0.5s; 
+}
+
+.recipe_flex img:hover {
+  transform: rotate(360deg); 
+}
+
+.resept h1{
+  font-weight: 400;
+  background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #5e2d2d, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+
+}
+
+
+.text_animation {
+  opacity: 0; 
+  animation: fadeIn ease-in 1; 
+  animation-fill-mode: forwards;
+  animation-duration: 2s; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
